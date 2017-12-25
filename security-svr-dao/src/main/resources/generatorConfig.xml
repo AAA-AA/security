@@ -15,7 +15,7 @@
             <property name="ignoreTablePrefix" value="t_"/>
         </plugin>
         <commentGenerator type="com.github.mybatis.generator.comment.CommentGenerator"/>
-        <jdbcConnection connectionURL="jdbc:mysql://127.0.0.1:3306/sms?useUnicode=true&amp;characterEncoding=utf-8"
+        <jdbcConnection connectionURL="jdbc:mysql://127.0.0.1:3306/security?useUnicode=true&amp;characterEncoding=utf-8"
                         driverClass="com.mysql.jdbc.Driver" password="1101"
                         userId="root" />
 
@@ -128,7 +128,7 @@
         <!--<table tableName="vip_temp" >-->
         <!--<property name="useActualColumnNames" value="false" />-->
         <!--</table>-->
-        <table tableName="sec_resources" >
+        <table tableName="sec_resource" >
             <property name="useActualColumnNames" value="false" />
         </table>
         <table tableName="sec_role_resource" >
@@ -137,10 +137,10 @@
         <table tableName="sec_role_user" >
             <property name="useActualColumnNames" value="false" />
         </table>
-        <table tableName="sec_roles" >
+        <table tableName="sec_role" >
             <property name="useActualColumnNames" value="false" />
         </table>
-        <table tableName="sec_users" >
+        <table tableName="sec_user" >
             <property name="useActualColumnNames" value="false" />
         </table>
     </context>

@@ -4,21 +4,24 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * link table is sec_role_user
+ * link table is sec_resource
  * Copyright © 2017, github and/or its affiliates. All rights reserved.
  **/
 @Data
-public class SecRoleUser {
+public class SecResource {
     private Integer id;
 
-    /**用户id*/
-    private Integer userId;
+    /**请求路径*/
+    private String uri;
 
-    /**角色id*/
-    private Integer roleId;
+    /**父节点id*/
+    private Integer parentId;
 
     /**版本号*/
     private Integer version;
+
+    /**层级*/
+    private Integer level;
 
     /**记录同步时间*/
     private Date createdAt;

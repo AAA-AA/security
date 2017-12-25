@@ -79,7 +79,7 @@
 		<appender-ref ref="ERROR"/>
 	</logger>
 
-	<root level="debug">
+	<root level="info">
 		<!-- APP_ERROR: WARN ERROR OFF -->
 		<appender-ref ref="STDOUT"/>
 		<appender-ref ref="DEBUG"/>

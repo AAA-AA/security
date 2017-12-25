@@ -11,19 +11,27 @@ import lombok.Data;
 public class SecRoleResource {
     private Integer id;
 
-    private Date createTime;
-
-    private Date updateTime;
-
-    private Integer version;
-
-    private Integer status;
-
-    private String mark;
-
-    /**菜单id*/
+    /**资源id*/
     private Integer resourceId;
 
     /**角色id*/
     private Integer roleId;
+
+    /**记录同步时间*/
+    private Date createdAt;
+
+    /**创建人*/
+    private String createdBy;
+
+    /**删除状态字段，0有效，1删除*/
+    private Integer isDelete;
+
+    /**状态,目前仅作保留字段*/
+    private Integer status;
+
+    /**记录更新时间*/
+    private Date updatedAt;
+
+    /**更新人*/
+    private String updatedBy;
 }
